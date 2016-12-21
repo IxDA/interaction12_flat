@@ -1,0 +1,12 @@
+<nav class="interior-nav nav ${section}" id="${section}-nav"><div class="wrap">
+  <ul class="menu" id="menu-${section}-menu">
+  {{each pages}}
+    {{if iframe}}
+    <li><a href="${href}">${title}</a></li>
+    {{else}}
+    <li><a href="#${id}">${title}</a></li>
+    {{/if}}
+  {{/each}}
+  </ul>
+  <a href="#${section}-nav" data-c-actions="toggleClass" data-class="collapsed" class="toggle">toggle</a>
+</div></nav>

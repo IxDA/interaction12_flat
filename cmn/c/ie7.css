@@ -1,0 +1,16 @@
+
+.main-content .hero { padding-bottom:5px; }
+.main-content .hero .details { width:85%; bottom:8px; }
+
+.article h1 { font: 22px/2em 'ColaborateThinRegular', Arial, sans-serif; color:#006253; text-shadow:-1px 1px 0 #ddd; }
+.article h3 { font: 22px/2em 'ColaborateThinRegular', Arial, sans-serif; color:#006253; text-shadow:-1px 1px 0 #ddd; }
+
+.five-cols .article { width:19.5%; float:left; }
+
+.mc-field-group .frm-txt { height:26px; } 
+.mc-field-group .button { width:80px; }
+
+.modal { top:95px; }
+
+.modal .article h2 { float:left; clear:both; }
+.modal .article p { clear:both; }

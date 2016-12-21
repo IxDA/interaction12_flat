@@ -1,0 +1,57 @@
+{{if thumbs}}
+<section class="speaker-thumbs">
+  <ul>
+    {{each speakers}}
+    <li>
+      <a href="/speakers/bios/#${safe}s" class="${class_name}" title="${prefix}${first} ${last}">
+        <h3>${first}<br />${last}</h3>
+        <img src="/wp-content/themes/interaction12/images/speakers/IxD12_${src}_thumb.jpg" width="135" height="135" title="${prefix}${first} ${last}" alt="${prefix}${first} ${last}" class="speaker-thumb"/>
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+</section>
+{{/if}}
+{{if keynotes}}
+<section class="keynote-widget">
+  {{each speakers}}
+  <article class="speaker tout">
+    <a href="/speakers/${safe}s"><img alt="${prefix}${first} ${last}" src="/wp-content/themes/interaction12/images/speakers/IxD12_${src}_large.jpg" title="${prefix}${first} ${last}"><h1>${first} ${last}</h1></a>
+  </article>
+  {{/each}}
+</section>
+{{/if}}
+{{if minis}}
+<a href="#keynote-nav" class="what-about" data-c-actions="triggerEvent" data-event="ixda:show-minis">
+  <h3>What about the rest? <span>(click to find out)</span></h3>
+</a>
+<ul class="mini-speakers">
+  {{each speakers}}
+  <li>
+    <a href="/speakers/bios/#${safe}" class="mini" title="${prefix}${first} ${last}">
+      <img src="/wp-content/themes/interaction12/images/speakers/IxD12_${src}_mini.jpg" width="32" height="32" title="${prefix}${first} ${last}" alt="${prefix}${first} ${last}" class="speaker-mini"/>
+    </a>
+  </li>
+  {{/each}}
+</ul>
+{{/if}}
+{{if bios}}
+<section class="speaker-list">
+  {{each speakers}}
+  <article class="speaker ${class_name}" id="${safe}" title="${first} ${last}" data-country="${country}" data-session-types="${session_types}" data-gender="${gender}" data-slug="bios" data-post-id="1022" data-href="/speakers/bios/#${safe}">
+    <h3>${prefix}${first} ${last}</h3>
+    <h5><span class="job">${job_title}</span>{{if organization}}, <em class="job">${organization}</em>{{/if}}</h5>
+    <span data-href="/speakers/${safe}" title="${first} ${last}" class="speaker-thumb ${class_name}"><img src="/wp-content/themes/interaction12/images/layout/blank.gif" data-src="/wp-content/themes/interaction12/images/speakers/IxD12_${src}_medium.jpg" width="180" height="120" title="${first} ${last}" alt="${first} ${last}" /></span>
+    <div class="biography">
+      {{each biography}}
+      <p>${$index}</p>
+      {{/each}}
+    
+    </div>
+    <ul class="sessions">${sessions}
+    </ul>
+    ${links}
+  </article>
+  {{/each}}
+</section>
+{{/if}}

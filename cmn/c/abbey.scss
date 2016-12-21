@@ -1,0 +1,800 @@
+$font: "Lucida Grande",Tahoma,Arial,sans-serif;
+$line: url(http://interaction12.ixda.org/cmn/i/layout/line.png);
+$line-top: transparent url(http://interaction12.ixda.org/cmn/i/layout/line.png) no-repeat 0 top;
+$mw: 1000px;
+$mw-non: 920px;
+$col: #444;
+
+.ixda-header { display:none; }
+
+/* Hand cursor on clickable input elements */
+label, input[type="button"], input[type="submit"], input[type="image"], button {
+  cursor: pointer; }
+
+a, a:link, a:visited, a:hover {
+  color: #34458B;
+  text-shadow: 1px 1px 0 #ddd; }
+
+div, p, td, table, .maXtd, .doXtd, .coXtd {
+  text-align: left;
+  font-family: $font;
+  color: $col; }
+
+p {
+  line-height: 1.5em; }
+
+hr {
+  display: none; }
+
+table, .tablebord {
+  font: {
+    size:small;
+    family: $font;
+  }
+  // width: 97%;
+  width: auto;
+  min-width: 600px;
+  color: $col;
+  background: transparent;
+  margin: 0 0 .25em;
+  max-width: $mw;
+  .non-iframe & {
+    max-width: $mw-non; }
+}
+
+body, body.doXbody, .doXbody {
+  background: transparent; }
+body {
+  >.doXbody,>.maXbody,>.coXbody {
+    max-width:$mw-non;
+    margin:0 auto;
+  }
+  
+}
+
+.progress {
+  display: none;
+  font-size: 180%; 
+  &.current {
+    display: block; }
+}
+
+div.doXbody, body.doXbody > div, .noXbody, .coXbody, .fuXbody, .maXbody {
+  color: $col;
+  font-family: $font;
+ }
+
+div.doXbody {
+  color: $col;
+  font-family: $font;
+  div, div table {
+    text-align:left; }
+  .linecolor {
+    background-position: center 0;
+    padding-top: 5px; }
+  .logo, .header-text {
+    display: block;
+    height: 1px;
+    overflow: hidden; }
+  center table .doXintro {
+    text-align: right;
+    padding-right: 20%; }
+  
+}
+
+.coXbody {
+  color: $col;
+  font-family: $font;
+  background: transparent $line no-repeat 20px top;
+  padding-top: 25px;
+  margin-top: 25px;
+  .linecolor {
+    display: none !important; }  
+  .coXtd {
+    height: 40px;
+    padding: 0 5px;
+    width: auto;
+    vertical-align: middle; 
+    &.with-cb {
+      width: 20px;
+      padding: 2px 0 0;
+      text-align: center;
+      vertical-align:top; }
+    .tablebord tr td table tr:hover & {
+      background: #f5f5f5; }
+
+  }
+  .tablebord tr td table tr:hover .coXtd {
+    background: #f5f5f5; }
+
+  table tr.selected td, table tr.selected:hover td, table tr.selected:hover .coXtd {
+    background: #e5e5e5; }
+  .coXcolhead {
+    display: none; }
+}
+
+.coXtdsum {
+  height: 40px;
+  padding: 0 5px;
+  width: auto !important;
+  vertical-align: middle !important; }
+
+/* headers */
+
+h2 {
+  color: #006253;
+  font: {
+    family: "Trebuchet MS", sans-serif;
+    weight: normal;
+    size: 180%;
+  }
+  line-height: 135%;
+  letter-spacing: .03em;
+  text-shadow: -1px 1px 0 #ddd;
+  padding: 0;
+  margin: 10px 0 0; 
+  .sectionHead {
+    display: block; }
+  .step-4 & {
+    margin:10px 0 1em; }
+}
+
+.sectionTable {
+  background: transparent $line no-repeat 0 20px;
+  padding-top: 25px; }
+
+.total-value, .SumSectHead.total-value {
+  padding-top: 25px;
+  font: {
+    size: 125%;
+    weight: bold; }
+  }
+
+tr.err {
+  .doXfieldlabel, input, select, .policy-agree {
+    color: #de0000;
+    border-color: #de0000; } 
+}
+
+#err-msg {
+  max-width: $mw;
+  margin: 1em auto 0;
+  .non-iframe & {
+    max-width: 790px;
+    margin:2em auto; }
+  p {
+    border: 2px solid #de0000;
+    background: #fcfcfc;
+    background: rgba(251, 251, 251, 0.3);
+    font-size: 12px;
+    padding: 1em;
+    max-width: 760px;
+    margin-left: 0; }
+}
+
+.req-field {
+  color: #34458B;
+  text: {
+    shadow: 1px 1px 0 #ddd;
+    decoration: underline;
+  }
+  cursor: pointer; }
+
+form input, textarea, select {
+  width: auto; }
+
+input[type="text"], input.frm-txt, textarea, .frm-dd {
+  color: #2f2e2e;
+  font: {
+    size: .9em;
+    weight: normal;
+    family: $font;
+  }
+  line-height: 135%;
+  letter-spacing: .03em;
+  margin: .25em 0 3px;
+  background: white url(https://ixdaorg.wufoo.com/images/fieldbg.gif) repeat-x center top;
+  padding: 7px 0.25em;
+  width: 90%; }
+
+select {
+  border: {
+   color:#7c7c7c #c3c3c3 #ddd; 
+   style: solid;
+   width: 1px;
+  }
+  height: 34px;
+  text-transform: capitalize; 
+    option {
+      text-transform: capitalize; }
+ }
+
+
+.instr {
+  font-size: 90%;
+  display: block;
+  line-height: 1.25em;
+  margin: 0 40px; }
+
+.instr-student {
+  font-size: 90%;
+  display: inline-block;
+  max-width: 375px;
+  line-height: 1.5em;
+  padding-left: 15px;
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  .selected &, .over &, .coXtdsum & {
+    opacity: 1; }
+  .selected & {
+    color: #009a00; }
+}
+
+.instr-registration {
+  display: block;
+  margin: 0 0 1em; }
+
+.instr-field {
+  display: block;
+  font-size: 90%;
+  margin: 1px 0 5px;
+  color: #555; }
+
+.edit-link {
+  margin-left: 10px; }
+
+.instr-cvs {
+  font-size: 85%;
+  display: inline-block;
+  width: 75%;
+  line-height: 1.5em;
+  vertical-align: top; }
+
+.doXfieldlabel, .SumSectHead {
+  background: transparent;
+  color: $col;
+  font: {
+    family: $font;
+    weight: bold;
+    size: 95%;
+    style: normal;
+  }
+  letter-spacing: .01em;
+  padding: 8px 0 3px;
+  margin: 0;
+  width: 180px !important;
+  vertical-align: top; }
+
+.doXtd, .doXfieldLabel {
+  background:transparent;
+  width:auto;
+  padding-bottom: 8px;
+  vertical-align: top;
+  .step-3 p .w630 & {
+    width:600px;
+  }
+  &.maXtdsum {
+    padding: 4px 0;
+    vertical-align: middle; }
+  &.width-cb {
+  padding-top: 8px; }
+  img {
+    display:none;
+  }
+}
+  
+
+.maXbody {
+  background:transparent;
+  .maXbody {
+    background: transparent $line no-repeat center center;
+    height: 50px;
+    padding: 0; }
+  table {
+    .maXtd {
+      font-family: $font; 
+      &.w70 {
+        width: auto; }
+      .opt {
+        width: auto;
+        display: inline-block;
+        margin: 0 50px 0 3px;
+        label {
+          margin: 0 0 0 5px; }
+        input {
+          width: auto; }
+      }
+    }
+  }
+}
+
+
+.fuXsectintro {
+  color: $col;
+  font-family: $font;
+  background: transparent;
+  b {
+    font-weight: normal;
+    display: block; }
+}
+
+
+
+.coXcolhead, .fuXcolhead {
+  color: $col;
+  padding: 3px 0;
+  font: {
+    size: .9em;
+    family: $font;
+  }
+  background: rgba(221, 221, 221, 0.8); }
+
+.doXtdSum, .maXtdsum {
+  background: transparent;
+  font-size: 100%;
+  line-height: 1.7em;
+  color: $col;
+  vertical-align: middle;
+  &.total-value {
+    padding: 25px 0 3px;
+    color: #007800;
+    line-height: 1em;
+    font: {
+      weight: bold;
+      size: 150%;
+    }
+  }
+  b img {
+    display: none; }
+}
+
+body.doXbody {
+  .doXintro {
+    font:  {
+      family: $font;
+      size: 1em; }
+    line-height: 1.9em;
+    color: $col;
+  }
+  td.doXbody input {
+    width: auto !important;
+    margin: 20px 5px 20px 0 !important; }
+  > p {
+    margin: 0 auto;
+    max-width: $mw;
+    .non-iframe & {
+      max-width: $mw-non; }
+    padding: 55px 20px 10px 20px; }
+}
+
+.card-type {
+  padding: 10px 0 25px;
+  background: transparent $line no-repeat 0 80%;
+  input {
+   margin: 0 9px 0 3px; }
+ .spacer {
+   margin-right: 30px; }
+}
+.cc-exp select {
+  width: 40%;
+  max-width: 70px; }
+
+.cc-cvs input {
+  max-width: 60px;
+  vertical-align: top;
+  margin-right: 10px; }
+
+.step-3 form {
+  position:relative;
+}
+#cvn-info {
+  display:block;
+  position:absolute;
+  right:0;
+  top:100px;
+  font-size:95%;
+  max-width:500px;
+  border:5px double #999;
+  background:#fff;
+  padding:1em 2em;
+  p {
+    
+  }
+  .samples {
+    overflow:hidden;
+    margin:2em 0 1em;
+    .sample {
+      float:left;
+      width:225px;
+      margin:0 5px 0 0;
+      img {
+        display:block !important;
+        margin:0 auto;
+      }
+      p {
+        font-size:95%;
+        max-width:175px;
+        margin:1em auto;
+        padding:0 0 0 10px;
+      }
+    }
+  }
+  .close-it {
+    display:block;
+    clear:both;
+    font: {
+      weight:bold;
+      family:tahoma, sans-serif;
+    }
+    text: {
+      shadow:none;
+      transform:uppercase;
+    }
+    letter-spacing:0.05em;
+    margin-left:210px;
+  }
+}
+
+body, body.doXbody, div.doXbody, body.doXbody > div, .noXbody, .coXbody, .fuXbody {
+  background: transparent; }
+
+.terms {
+  background: $line-top;
+  padding-top: 25px;
+  margin: 0; }
+
+.policy-cancel {
+  margin: 0 .5em;
+  h5 {
+    font-size: 105%;
+    margin: .5em 0 0; }
+  ul {
+   margin: 0;
+   padding: 0 0 0 1.5em; }
+}
+
+.policy-agree {
+  padding-bottom: 20px;
+  text-indent: 10px; }
+
+.total-due {
+  font-size: 125%;
+  padding: 0;
+  line-height: 35px;
+  b {
+    font-size: 150%;
+    color: #007800;
+    margin-left: 15px; }
+}
+.payment-notes {
+  background: transparent $line no-repeat 0 95%;
+  padding-bottom: 25px;
+  h5 {
+    margin: 1em 0 0;  
+    font: {
+      size: 150%;
+      weight: normal;
+    }
+  }
+  
+}
+h5.sub-head {
+  margin: 1em 0 0;
+  font: {
+    size: 150%;
+    weight: normal;
+  }
+}
+
+.payment-option {
+  background: $line-top;
+  padding: 25px 0 8px; }
+
+.policy-payment {
+  background: $line-top;
+  padding: 25px 0 8px;
+  font-size: 13px;
+  clear: both;
+  h5 {
+    font: {
+      size: 150%;
+      weight: normal;
+    }
+    margin: 0; }
+  .warning {
+    font: {
+      size: 93%;
+      weight: normal;
+      style: italic;
+    }
+    line-height: 1.75em;
+    color: #000;
+    margin: 0; }
+  .instr-payment {
+    width: 65%;
+    margin: 0 0 3em;
+    h6 {
+      font-size: 102%;
+      margin: 1em 0 .5em;
+      line-height: 1.5em; }
+    p {
+      margin: 0;
+      font-size: 95%; }
+    address {
+      display: block;
+      font-style: normal;
+      margin: .25em 20px;
+      line-height: 1.25em; }
+    dl {
+      display: block;
+      margin: .25em 20px;
+      overflow: hidden;
+      width: 600px;
+      min-height: 20px;
+      line-height: 1.5em;
+      font-size: 95%;
+      dt {
+        display: inline-block;
+        width: 175px;
+        font: {
+          style: normal;
+          weight: bold;
+        }
+        margin: 0;
+        padding: 0; }
+      dd {
+        display: inline-block;
+        min-width: 375px;
+        font-style: normal;
+        margin: 0;
+        padding: 0; }
+    }
+  }
+}
+
+.span.req {
+  color: #de0000;
+  display: none;
+  .js & .step-1 {
+    display: inline; }
+}
+
+
+.footer-contact {
+  margin: 2em 0 0;
+  font-size: 11px;
+  padding-bottom:30px;
+  line-height: 1.5em; 
+  .iframe & {
+    display: none; }
+
+}
+
+
+/* Buttons */
+.SubmitBtn {
+  width: 130px;
+  cursor: pointer;
+  font: {
+    family: Arial, Helvetica, sans-serif;
+    size: 12px;
+  }
+  color: #525252;
+  padding: 8px 16px;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(0.5, #ebebeb), color-stop(0.5, #f5f5f5), to(#dbdbdb));
+  background: -moz-linear-gradient(top, white 0%, #ebebeb 50%, #f5f5f5 50%, #dbdbdb);
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  border: 1px solid #a1a1a1;
+  -webkit-box-shadow: 0 1px 3px rgba(56, 56, 56, 0.5), inset 0 0 2px #dbdbdb;
+  -moz-box-shadow: 0 1px 3px rgba(56, 56, 56, 0.5), inset 0 0 2px #dbdbdb;
+  box-shadow: 0 1px 3px rgba(56, 56, 56, 0.5), inset 0 0 2px #dbdbdb;
+  text-shadow: 0 -1px 0 rgba(143, 143, 143, 0.2), 0 1px 0 white;
+  &:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(0.5, #ebebeb), color-stop(0.5, #f5f5f5), to(#dbdbdb));
+    background: -moz-linear-gradient(top, white 0%, #ebebeb 50%, #f5f5f5 50%, #dbdbdb);
+    -webkit-box-shadow: 0 0 0 rgba(56, 56, 56, 0.7), inset 0 0 2px #dbdbdb;
+    -moz-box-shadow: 0 0 0 rgba(56, 56, 56, 0.7), inset 0 0 2px #dbdbdb;
+    box-shadow: 0 0 0 rgba(56, 56, 56, 0.7), inset 0 0 0 #dbdbdb;
+    text-shadow: 0 0 0 rgba(143, 143, 143, 0), 0 0 0 rgba(255, 255, 255, 0); }
+  &:active {
+    color: #ebebeb;
+    background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#757575));
+    background: -moz-linear-gradient(top, #cccccc 0%, #757575);
+    -webkit-box-shadow: 0 0 0 rgba(56, 56, 56, 0.7), inset 0 0 2px #dbdbdb;
+    -moz-box-shadow: 0 0 0 rgba(56, 56, 56, 0.7), inset 0 0 2px #dbdbdb;
+    box-shadow: 0 0 0 rgba(56, 56, 56, 0.7), inset 0 0 2px #dbdbdb;
+    text-shadow: 0 0 0 rgba(143, 143, 143, 0), 0 0 0 rgba(255, 255, 255, 0); }
+  .step-4 & {
+    display:none;
+  }
+}
+
+input.frm-txt, select {
+  &.f125 {
+    width: 125px; }
+  &.f150 {
+    width: 150px; }
+  &.f220 {
+    width: 220px; }
+  &.mw125 {
+    max-width: 125px; }
+  &.mw650 {
+    max-width: 560px; }
+}
+
+.promo-code {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+  &.PC {
+    height: auto;
+    opacity: 1;
+    display: table; }
+  .doXfieldlabel {
+    text-indent: 25px; }
+}
+
+.reg-opts td, .coXtdsum.w200 {
+  &.coXtd {
+    vertical-align: top;
+    padding: 10px 5px;
+    &.with-cb {
+      width: 25px !important;
+      padding: 10px 0 !important; }
+    &.w100 {
+      text-align: right; }
+    b {
+      font: {
+        size: 85%;
+        weight: normal; }
+      }
+  }
+  strong {
+    display: block;
+    font-size: 118%;
+    margin: 0 0 5px; }
+}
+
+.wrapper {
+  color: $col;
+  font-family: $font;
+  padding: 5px 20px;
+  margin: 0 auto;
+  max-width: $mw;
+  .non-iframe & {
+    max-width: $mw-non; }
+  .maXbody & {
+    background: transparent $line no-repeat 0 95%;
+    padding-bottom: 25px; }
+  &table {
+    max-width: $mw;
+    .non-iframe & {
+      max-width: $mw-non; }
+    margin: 0 auto !important; }
+  .wrapper {
+    padding: 0;
+    margin: 0;
+    max-width: none; }
+ }
+
+.linecolor {
+  background: transparent $line no-repeat center 20px;
+  margin: 0 0 10px;
+  min-height: 1px;
+  padding-top: 25px;
+  .step-3 & {
+    background-position:center 5px; }
+  }
+
+#ixda-screen {
+  display: none;
+  .screen {
+   position: fixed;
+   width: 100%;
+   min-height: 800px;
+   top: 0;
+   left: 0;
+   background: #fff;
+   background: rgba(255, 255, 255, 0.8) url(http://interaction12.ixda.org/cmn/i/layout/page-loader.gif) no-repeat 50% 150px !important;
+   z-index: 9992; }
+}
+
+/* accomodations */
+.acXbody {
+  h5 {
+    font: {
+      size: 150%;
+      weight: normal;
+      family: $font;
+    }
+    margin: 1em 0 0;
+    padding-left: 5px; }
+  .acXhotel.w630 {
+    font: {
+      weight: bold;
+      family: $font;
+    }
+    padding: 15px 0 5px 5px;
+
+    margin: 0; }
+  .acXtd, .acXcolhead {
+    line-height: 1.75em;
+    &.w50 {
+      width: 40px;
+      padding-left: 5px; }
+    &.w150 {
+      width: 200px; }
+    &.w90 {
+      width: 90px;
+      text-align: right; }
+    &.check-in-out {
+      padding: 20px 0;
+      width: 325px;
+      line-height: 39px;
+      font-weight: bold;
+      select {
+        float: right; }
+      .clearing {
+        display: block;
+        height: 10px; }
+    }
+
+  }
+}
+
+.acXcolhead {
+  font-weight: bold; }
+
+table.button-table {
+  background: transparent $line no-repeat center top;
+  margin: 0 0 10px;
+  min-height: 1px;
+  padding-top: 25px; }
+
+.hide { display:none !important; }
+
+html.non-iframe {
+  background:url(http://interaction12.ixda.org/wp-content/themes/interaction12/images/assets/cardboard_light_gray_tile_bg.jpg) repeat 0 0 transparent;
+  body {
+    background:url(http://interaction12.ixda.org/wp-content/themes/interaction12/images/layout/bg_body.png) repeat-y center top transparent;
+    margin:0;
+    .ixda-header {
+      display:block;
+      background:url(http://interaction12.ixda.org/wp-content/themes/interaction12/images/assets/cardboard_light_gray_tile_bg.jpg) repeat 0 0 transparent;
+      .banner {
+        background:url(http://interaction12.ixda.org/wp-content/themes/interaction12/images/assets/top_illustration_v4.png) no-repeat 50% 0 transparent;
+        height:331px;
+        h1 {
+          top:94px;
+          padding:0 43px;
+          overflow:hidden;
+          position:relative;
+          margin:0 auto;
+          width:930px;
+          .ixda-logo {
+            position:relative;
+            background:url(http://interaction12.ixda.org/wp-content/themes/interaction12/images/assets/ixda_logo_top.png) no-repeat 0 0 transparent;
+            width: 473px;
+            height: 117px;
+            display:block;
+            text-indent:-9999px;
+          }
+        }
+      }
+      height:331px;
+      position:relative;
+      margin-bottom:40px;
+    } // ixda-header
+    &.step-4 form.wrapper {
+      padding-bottom:50px; 
+    }
+  }
+}

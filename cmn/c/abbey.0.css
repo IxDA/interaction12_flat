@@ -1,0 +1,186 @@
+
+/* Hand cursor on clickable input elements */
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+a, a:link, a:visited, a:hover { color:#34458B; text-shadow:1px 1px 0 #ddd; }
+div, p, td, table, .maXtd, .doXtd, .coXtd { text-align:left; font-family:"Lucida Grande",Tahoma,Arial,sans-serif; color:#444; }
+p { line-height:1.5em; }
+hr { display:none; }
+table, .tablebord { font-size:small; width:90%; color:#444; background:transparent; margin:0 0 .25em; font-family:"Lucida Grande",Tahoma,Arial,sans-serif; }
+body, body.doXbody, .doXbody { background:transparent; }
+.progress { display:none; }
+.progress.current { display:block; }
+.doXtd { background:transparent; width:600px; }
+
+div.doXbody, body.doXbody>div, .noXbody, .coXbody, .fuXbody, .maXbody { color:#444; font-family:"Lucida Grande",Tahoma,Arial,sans-serif; background:#dfdfdf; background:rgba(255,255,255,.7); max-width:1000px; padding:5px 20px; max-width:1000px; margin:0 auto; }
+div.doXbody .linecolor { background-position:center 0; padding-top:5px;  }
+.coXbody .linecolor { display:none !important; }
+
+.doXbody .logo, .doXbody .header-text { display:none; }
+.doXbody .logo, .doXbody .header-text { display:block; height:1px; overflow:hidden; } /* to detect with JS */
+.doXBody center table .doXintro { text-align:right; padding-right:20%; }
+
+.doXBody div, .doXBody div table { text-align:left; }
+
+/* headers */
+h2.sectionHead, .noXsecthead, .doXdemohead, .fuXsecthead, .coXsecthead, .coXhead, .doXhead, .summaryHead { color:#006253; font-size:180%; font-family:"Trebuchet MS", sans-serif; font-weight:normal; line-height:135%; letter-spacing:.03em; text-shadow:-1px 1px 0 #ddd; padding:0 0 15px; }
+h2.sectionHead { display:block; }
+
+.linecolor .SumSectHead.sectionHead { padding-top:25px; }
+.total-value { padding-top:25px; font-size:125%; font-weight:bold; }
+
+.doXtdsum.doXfieldlabel { }
+
+tr.err .doXfieldlabel, tr.err input, tr.err select { color:#de0000; border-color:#de0000; }
+#err-msg { max-width:1010px; margin:1em auto -20px; }
+#err-msg p { border:2px solid #de0000; background:#fcfcfc; background:rgba(251,251,251,.3); font-size:12px; padding:1em; max-width:760px; margin-left:0; }
+.req-field { color:#34458B; text-shadow:1px 1px 0 #ddd; text-decoration:underline; cursor:pointer; }
+/*.maXbody:last-child div table:last-child { margin-bottom:60px; } CSS3 */
+
+
+.doXtd img { display:none; }
+form input, textarea, select { width:auto; }
+input[type="text"], input.frm-txt, textarea, select { color:#2f2e2e; font-size:.9em; font-weight:normal; font-family:"Lucida Grande",Tahoma,Arial,sans-serif; line-height:135%; letter-spacing:.03em; margin:.25em 0 3px; background:#fff url(https://ixdaorg.wufoo.com/images/fieldbg.gif) repeat-x center top; padding:7px 0.25em; width:90%; }
+
+select { border-color:#7c7c7c #c3c3c3 #ddd; border-style:solid; border-width:1px; height:34px; }
+select, select option { text-transform:capitalize; }
+
+.coXbody .coXtd, .coXtdsum { height:40px; padding:0 5px; width:auto !important; vertical-align:middle !important; }
+
+.coXbody .tablebord tr td table tr:hover .coXtd { background:#f5f5f5; }
+.coXbody table tr td.coXtd.with-cb { width:20px !important; padding:0 !important; text-align:center; }
+
+.instr-student { font-size:90%; display:inline-block; max-width:375px; line-height:1.5em; padding-left:15px; opacity:0; -webkit-transition:all 0.15s ease-in-out; -moz-transition:all 0.15s ease-in-out; transition:all 0.15s ease-in-out; }
+.selected .instr-student, .over .instr-student, .coXtdsum .instr-student { opacity:1; }
+.selected .instr-student { color:#009a00; }
+.coXbody table tr.selected td, .coXbody table tr.selected:hover td { background:#e5e5e5; }
+.instr-field { display:block; font-size:90%; margin:1px 0 5px; color:#555; }
+.edit-link { margin-left:10px; }
+
+.instr-cvs { font-size:85%; display:inline-block; vertical-align:top; width:75%; line-height:1.5em; vertical-align:top; }
+
+.doXfieldlabel, .SumSectHead { background:transparent; color:#444; font-family:"Lucida Grande",Tahoma,Arial,sans-serif; font-weight:bold; font-size:95%; font-style:normal; letter-spacing:.01em; padding:8px 0 3px; margin:0; width:180px !important; vertical-align:top; }
+.doXtd, .doXfieldLabel { padding-bottom:8px; vertical-align:top; }
+.doXtd.maXtdsum, .doXfieldLabel.maXtdsum { padding:4px 0; vertical-align:middle; }
+.doXtd.width-cb { padding-top:8px; }
+.maXtd { font-family:"Lucida Grande",Tahoma,Arial,sans-serif; }
+.maXbody table .maXtd.w70 { width:auto; }
+.maXbody table .maXtd .opt { width:auto; display:inline-block; margin:0 50px 0 3px; }
+.maXbody table .maXtd .opt label { margin:0 0 0 5px; }
+.maXbody table .maXtd .opt input { width:auto; }
+
+.fuXsectintro { color:#444; font-family:"Lucida Grande",Tahoma,Arial,sans-serif; background:transparent; }
+.fuXsectintro b { font-weight:normal; display:block; }
+
+.coXcolhead, .fuXcolhead { color:#444; padding:3px 0; font-size:.9em; font-family:"Lucida Grande",Tahoma,Arial,sans-serif; background:rgba(221,221,221,.8); }
+.coXbody .coXcolhead { display:none; }
+
+.doXtdSum, .maXtdsum { background:transparent; font-size:100%; line-height:1.7em; width:600px; color:#444; vertical-align:middle; }
+/*.doXtdSum[align="right"] a { vertical-align:bottom; } CSS3 */
+/*.maXtdsum:first-child, .doXtdSum:first-child { width:400px; } CSS3 */
+.doXtdSum b img { display:none; }
+
+.SumSectHead { text-transform:capitalize; font-weight:normal; width:160px !important; font-size:150%; }
+
+/*body.doXbody div p table:first-child { background:transparent url(http://interaction12.ixda.org/cmn/i/layout/line.png) no-repeat 0 20px; padding-top:25px !important; } */
+body.doXbody .doXintro { font-family:"Lucida Grande",Tahoma,Arial,sans-serif; line-height:1.9em; color:#444; font-size:1em; }
+body.doXbody td.doXbody input { width:auto !important; margin:20px 5px 20px 0 !important; }
+
+body.doXbody>p { margin:0 auto; max-width:1000px; padding:55px 20px 10px 20px; }
+
+.card-type { padding:10px 0 25px; background:transparent url(http://interaction12.ixda.org/cmn/i/layout/line.png) no-repeat 0 80%; }
+.card-type input { margin:0 9px 0 3px; }
+.card-type .spacer { margin-right:30px; }
+.cc-exp select { width:40%; max-width:70px; }
+.cc-cvs input { max-width:60px; vertical-align:top; margin-right:10px; }
+
+
+body, body.doXbody, div.doXbody, body.doXbody>div, .noXbody, .coXbody, .fuXbody, .maXbody { background:transparent; }
+/*.coXbody { background:transparent url(http://interaction12.ixda.org/cmn/i/layout/line.png) no-repeat center top; }*/
+.maXbody .maXbody { background:transparent url(http://interaction12.ixda.org/cmn/i/layout/line.png) no-repeat center center; height:50px; padding:0; }
+.doXtdSum.total-value { padding:25px 0 3px; font-size:150%; color:#007800; font-weight:bold; line-height:1em; }
+
+
+.terms { background:transparent url(http://interaction12.ixda.org/cmn/i/layout/line.png) no-repeat 0 top; padding-top:25px; margin:0; }
+.policy-cancel { margin:0 .5em; }
+.policy-cancel h5 { font-size:105%; margin:.5em 0 0; }
+.policy-cancel ul { margin:0; padding:0 0 0 1.5em; }
+.policy-agree { padding-bottom:20px; text-indent:10px; }
+
+.total-due { font-size:125%; }
+.total-due b { font-size:150%; color:#007800; }
+.payment-notes { }
+.payment-notes h5, h5.sub-head { font-size:150%; font-weight:normal; margin:1em 0 0; }
+
+.payment-option { background:transparent url(http://interaction12.ixda.org/cmn/i/layout/line.png) no-repeat 0 top; padding:25px 0 8px; }
+.policy-payment { background:transparent url(http://interaction12.ixda.org/cmn/i/layout/line.png) no-repeat 0 top; padding:25px 0 8px; font-size:13px; clear:both; }
+.policy-payment h5 { font-size:150%; font-weight:normal; margin:0; }
+.policy-payment .instr-payment { width:65%; margin:0 0 3em; }
+.policy-payment .instr-payment h6 { font-size:102%; margin:1em 0 .5em; line-height:1.5em; }
+.policy-payment .instr-payment p { margin:0; font-size:95%; }
+.policy-payment .instr-payment dl { display:block; margin:.25em 20px; overflow:hidden; width:600px; min-height:20px; line-height:1.5em; font-size:95%; }
+  .policy-payment .instr-payment dl dt { display:inline-block; width:175px; font-style:normal; font-weight:bold; margin:0; padding:0; }
+  .policy-payment .instr-payment dl dd { display:inline-block; min-width:375px; font-style:normal; margin:0; padding:0; }
+.policy-payment .instr-payment address { display:block; font-style:normal; margin:.25em 20px; line-height:1.25em; }
+.policy-payment .warning { font-size:93%; font-weight:normal; line-height:1.75em; color:#000; font-style:italic; margin:0; }
+
+body { /*background:#efefef !important; */}
+span.req { color:#de0000; display:none; }
+.step-1 span.req { display:inline; }
+
+.progress { display:none; }
+.progress.current { display:block; }
+
+.footer-contact { margin:2em 0 0; font-size:11px; line-height:1.5em; }
+/* Buttons */
+.SubmitBtn {
+	width:130px; 
+	cursor:pointer;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#525252;
+	padding:8px 16px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(0.50, #ebebeb), color-stop(0.50, #f5f5f5), to(#dbdbdb));
+	background:-moz-linear-gradient(top, #ffffff 0%, #ebebeb 50%, #f5f5f5 50%, #dbdbdb);
+	-webkit-border-radius:9px;
+	-moz-border-radius:9px;
+	border-radius:9px;
+	border:1px solid #a1a1a1;
+	-webkit-box-shadow:0 1px 3px rgba(56,56,56,0.5), inset 0 0 2px rgba(219,219,219,1);
+	-moz-box-shadow:0 1px 3px rgba(56,56,56,0.5), inset 0 0 2px rgba(219,219,219,1);
+	box-shadow:0 1px 3px rgba(56,56,56,0.5), inset 0 0 2px rgba(219,219,219,1);
+	text-shadow:0 -1px 0 rgba(143,143,143,0.2), 0 1px 0 rgba(255,255,255,1);
+}
+
+.SubmitBtn:hover {
+	background:-webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(0.50, #ebebeb), color-stop(0.50, #f5f5f5), to(#dbdbdb));
+	background:-moz-linear-gradient(top, #ffffff 0%, #ebebeb 50%, #f5f5f5 50%, #dbdbdb);
+	-webkit-box-shadow:0 0 0 rgba(56,56,56,0.7), inset 0 0 2px rgba(219,219,219,1);
+	-moz-box-shadow:0 0 0 rgba(56,56,56,0.7), inset 0 0 2px rgba(219,219,219,1);
+	box-shadow:0 0 0 rgba(56,56,56,0.7), inset 0 0 0 rgba(219,219,219,1);
+	text-shadow:0 0 0 rgba(143,143,143,0), 0 0 0 rgba(255,255,255,0);
+}
+
+.SubmitBtn:active {
+	color:#ebebeb;
+	background:-webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#757575));
+	background: -moz-linear-gradient(top, #cccccc 0%, #757575);
+	-webkit-box-shadow:0 0 0 rgba(56,56,56,0.7), inset 0 0 2px rgba(219,219,219,1);
+	-moz-box-shadow:0 0 0 rgba(56,56,56,0.7), inset 0 0 2px rgba(219,219,219,1);
+	box-shadow:0 0 0 rgba(56,56,56,0.7), inset 0 0 2px rgba(219,219,219,1);
+	text-shadow:0 0 0 rgba(143,143,143,0), 0 0 0 rgba(255,255,255,0);
+}
+
+
+input.frm-txt.f125, select.f125 { width:125px; }
+input.frm-txt.f150, select.f150 { width:150px; }
+input.frm-txt.f220, select.f220 { width:220px; }
+input.frm-txt.mw125, select.mw125 { max-width:125px; }
+input.frm-txt.mw560, select.mw650{ max-width:560px; }
+.promo-code { display:block; height:0; overflow:hidden; opacity:0; -webkit-transition:opacity 0.25s ease-in-out; -moz-transition:opacity 0.25s ease-in-out; transition:opacity 0.25s ease-in-out; }
+.promo-code.PC { height:auto; opacity:1; display:table; }
+.promo-code .doXfieldlabel { text-indent:25px; }
+.reg-opts td b { font-weight:normal; }
+
+.coXbody { background:transparent url(http://interaction12.ixda.org/cmn/i/layout/line.png) no-repeat 20px top; padding-top:25px; margin-top:25px; }
+.maXbody .wrapper { background:transparent url(http://interaction12.ixda.org/cmn/i/layout/line.png) no-repeat 0 95%; padding-bottom:25px; }
+.linecolor { background:transparent url(http://interaction12.ixda.org/cmn/i/layout/line.png) no-repeat center 20px; margin:0 0 10px; min-height:1px; padding-top:25px; }

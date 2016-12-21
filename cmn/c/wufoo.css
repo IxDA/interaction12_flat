@@ -1,0 +1,201 @@
+/*
+Tell us all your juicy secrets
+We'd like to know a little bit more about you, so we better understand <strong>you</strong> and your unique perspective. 
+
+So, what've you got for us?
+We may like your name, your background, or your choice of sexyshoes@aol.com as an email address, but we still need to know what you plan to talk about.
+
+*/
+
+html, body { color:#2f2e2e; margin:0; padding:0; height:100%; text-align:left; font-family:"Helvetica Neue", arial, sans-serif; }
+html { min-height:1px; height:auto !important; height:1px; }
+.wufoo a, .wufoo a:link, .wufoo a:visited, .wufoo a:hover { color:#34458B; text-shadow:1px 1px 0 #ddd; }
+#public #container { }
+
+.wufoo #header h2 { display:none !important; }
+.wufoo li { margin:0 0 .6em; width:63%; padding-right:2%;  }
+.wufoo li.col { width:31.5%; float:left; margin-right:2%; clear:none; }
+.wufoo li.col.col-first { } 
+.wufoo li.col.col-last { } 
+
+.wufoo li.section { background:url("../i/layout/line.png") no-repeat center 20px transparent; min-height:1px; padding-top:25px; margin:0 0 10px; }
+.wufoo li.section h3 { letter-spacing:.03em; color:#006253; text-shadow:-1px 1px 0 #ddd; }
+.wufoo li.buttons { background:transparent; }
+.wufoo li.extra-wide { width:80% !important; }
+.wufoo textarea.large { height:6em; }
+
+.wufoo .buttons .btTxt {
+
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #525252;
+	padding: 8px 16px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#ebebeb 50%,
+		#f5f5f5 50%,
+		#dbdbdb);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ffffff),
+		color-stop(0.50, #ebebeb),
+		color-stop(0.50, #f5f5f5),
+		to(#dbdbdb));
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border: 1px solid #a1a1a1;
+	-moz-box-shadow:
+		0px 1px 3px rgba(56,56,56,0.5),
+		inset 0px 0px 2px rgba(219,219,219,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(56,56,56,0.5),
+		inset 0px 0px 2px rgba(219,219,219,1);
+	text-shadow:
+		0px -1px 0px rgba(143,143,143,0.2),
+		0px 1px 0px rgba(255,255,255,1);
+}
+
+.wufoo .buttons .btTxt:hover {
+			
+		font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #525252;
+			padding: 8px 16px;
+			background: -moz-linear-gradient(
+				top,
+				#ffffff 0%,
+				#ebebeb 50%,
+				#f5f5f5 50%,
+				#dbdbdb);
+			background: -webkit-gradient(
+				linear, left top, left bottom, 
+				from(#ffffff),
+				color-stop(0.50, #ebebeb),
+				color-stop(0.50, #f5f5f5),
+				to(#dbdbdb));
+			border-radius: 9px;
+			-moz-border-radius: 9px;
+			-webkit-border-radius: 9px;
+			border: 1px solid #a1a1a1;
+			-moz-box-shadow:
+				0px 0px 0px rgba(56,56,56,0.7),
+				inset 0px 0px 2px rgba(219,219,219,1);
+			-webkit-box-shadow:
+				0px 0px 0px rgba(56,56,56,0.7),
+				inset 0px 0px 2px rgba(219,219,219,1);
+			text-shadow:
+				0px 0px 0px rgba(143,143,143,0),
+				0px 0px 0px rgba(255,255,255,0);
+	}
+
+.wufoo .buttons .btTxt:active {
+			
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				color: #ebebeb;
+				padding: 8px 16px;
+				background: -moz-linear-gradient(
+					top,
+					#cccccc 0%,
+					#757575);
+				background: -webkit-gradient(
+					linear, left top, left bottom, 
+					from(#cccccc),
+					to(#757575));
+				border-radius: 9px;
+				-moz-border-radius: 9px;
+				-webkit-border-radius: 9px;
+				border: 1px solid #a1a1a1;
+				-moz-box-shadow:
+					0px 0px 0px rgba(56,56,56,0.7),
+					inset 0px 0px 2px rgba(219,219,219,1);
+				-webkit-box-shadow:
+					0px 0px 0px rgba(56,56,56,0.7),
+					inset 0px 0px 2px rgba(219,219,219,1);
+				text-shadow:
+					0px 0px 0px rgba(143,143,143,0),
+					0px 0px 0px rgba(255,255,255,0);
+
+		}
+		
+.wufoo .buttons #saveForm { margin-right:20px; }
+
+.wufoo input.text, .wufoo textarea.textarea, .wufoo input.file, .wufoo select.select { padding:7px .25em; font-size:.9em;} 
+
+.wufoo #header.info .submissions-hero { background:#fff; padding:7px 6px; line-height:0; border:1px solid #ccc; display:block; margin-left:2em; margin-bottom:2em; float:right; }
+.wufoo #header.info { padding-bottom:0; }
+.wufoo #header.info p { font-size:.95em; width:90%; margin:0 0 1em; }
+.wufoo #header.info br { display:none !important; line-height:0; margin:0; padding:0; }
+.wufoo #header.info ul { width:90%; margin:0 0 .5em; }
+.wufoo #header.info ul li { list-style:disc; margin:0 0 .75em 2em; font-size:.95em; width:99%; padding:0; clear:none; }
+.wufoo #header.info ul:after, .wufoo #header.info ul li:after { clear:none; }
+.wufoo #header.info p.deadline { margin:1em 0 0; clear:both; }
+
+.wufoo #header.info h3 {
+  letter-spacing: 0.03em;
+  text-shadow: -1px 1px 0 #ddd;
+  color: #006253;
+  font-family: "Trebuchet MS";
+  font-size: 180%;
+  font-style: normal;
+  font-weight: normal;
+  line-height:135%;
+  margin:.25em 0 3px;
+}
+
+.wufoo #header.info h5 {  
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    border: medium none;
+    color: #444444;
+    display: block;
+    font-size: 100%;
+    font-weight: bold;
+    line-height: 150%;
+    margin: 1.5em 0 0;
+    padding: 0 0 3px;
+    white-space: normal;
+}
+
+#container.confirm .wufoo { text-align:left; }
+#container.confirm .wufoo h2 { font-size:100%; text-align:left; line-height:1.5em; padding-top:0; padding-bottom:0; }
+
+/* graphs */
+.pie-charts { overflow:hidden; }
+.pie-charts .wfo_graph {
+  padding-top: 3px;
+  margin: 20px 100px 0 0;
+  width: 400px;
+  overflow: hidden;
+  float: left;
+  height: 380px;
+  position:relative;
+}
+.pie-charts .wfo_graph:nth-child(6),
+  .pie-charts .wfo_graph:nth-child(12) { margin:20px 0 0 0; }
+
+.pie-charts .wfo_graph h4, .with-cols .wfo_widget h4 {
+  font: 22px/2em 'ColaborateThinRegular', Arial, sans-serif; color:#006253; text-shadow:-1px 1px 0 #ddd;
+}
+.with-cols .fc caption {
+  height:35px;
+}
+.pie-charts .wfo_graph.pie .large {
+  width: 370px;
+  height: 330px;
+  line-height: 330px;
+  border-left: 5px solid #fff;
+  -webkit-box-shadow: 3px 3px 5px #006253;
+  -moz-box-shadow: 3px 3px 5px #006253; 
+  box-shadow: 3px 3px 5px #006253; 
+  position:relative;
+}
+.pie-charts.bottom .wfo_graph.pie .large {
+  border-left:0;
+  border-right: 15px solid #fff;
+  left:-10px;
+}

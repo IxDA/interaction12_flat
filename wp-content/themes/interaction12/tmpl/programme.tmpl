@@ -1,0 +1,31 @@
+{{if explore}}
+<div id="explore-programme" class="explore">
+  <h2>Explore our Programme</h2>
+  <form class="frm-explore" action="/programme" method="get">
+  <fieldset>
+    <label for="sort-by">Sort by:</label>
+    <select class="frm-dd frm-txt" id="sort-by" name="sort-by">
+      <option value="grid" selected>Schedule</option>
+      <option value="session-type">Session Type</option>
+      <option value="title">Session Title</option>
+      <option value="theme">Session Theme</option>
+      <option value="day">Session Day</option>
+    </select>
+  </fieldset>
+  </form>
+</div>
+<section id="sorted-programme" class="section-page"></section>
+{{/if}}
+{{if expand}}
+  <a href="#${id}" data-c-actions="toggleClass" data-class="open" class="expand-it">Details</a>
+{{/if}}
+{{if favorite}}
+  <a href="#session-${id}" data-c-actions="toggleSetting toggleClass" data-setting="fav-${id}" data-class="fav" class="favorite">Favorite</a>
+{{/if}}
+{{if other_links}}
+<span class="other-links">
+  {{each things}}
+  <a href="#${href}" data-c-actions="scrollTo" data-reset="false">${clean}</a>
+  {{/each}}
+</span>
+{{/if}}

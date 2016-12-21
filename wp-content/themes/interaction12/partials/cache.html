@@ -1,0 +1,22 @@
+<script>
+(function() {
+function updateCacheStatus() {
+  document.querySelector('#status').innerHTML = cacheStates[window.applicationCache.status];
+}
+
+addEvent(document.querySelector('#update'), 'click', function () {
+  window.applicationCache.update();
+});
+
+addEvent(document.querySelector('#swap'), 'click', function () {
+  window.applicationCache.swapCache();
+});
+
+var events = "checking,error,noupdate,downloading,progress,updateready,cached,obsolete".split(',');
+var i = events.length;
+
+while (i--) {
+  addEvent(window.applicationCache, events[i], updateCacheStatus);
+}
+})();
+</script>

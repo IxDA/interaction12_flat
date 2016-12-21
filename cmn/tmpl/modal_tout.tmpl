@@ -1,0 +1,13 @@
+<!--[if lt IE 8]><div class="article"><![endif]-->
+<article>
+<h2>${title}</h2>
+{{each content}}
+  <${tag}
+  {{each attr}}
+    ${$index}=${$value} 
+  {{/each}}
+  >${content}</${tag}>
+{{/each}}
+</article>
+<!--[if lt IE 8]></div><![endif]-->
+<a href="#screen" data-c-actions="closeModal" class="close">close</a>
